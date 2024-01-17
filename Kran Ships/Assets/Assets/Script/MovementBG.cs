@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class MovementBG : MonoBehaviour
 {
-    [Range(-2f, 1f)]
-    public float scrollSpeed = 0.5f;
-    private float ofset;
-    private Material mat;
+    [Range(-2f, 1f)] // Zarówno jest to suwak, jak i ogranicznik wartoœci zadklarowanych zmiennych, 
+    public float scrollSpeed = 0.5f; // Bazowa prêdkoœæ scrolowania 
+    private float ofset; //Suma scrollu w danym kiernku potrzebnego do SetTextureoffest
+    private Material mat; 
 
     void Start()
     {
@@ -19,5 +19,8 @@ public class MovementBG : MonoBehaviour
     {
         ofset += (Time.deltaTime * scrollSpeed) / 10f;
         mat.SetTextureOffset("_MainTex",new Vector2(ofset,0));
+        //Dziêki pobraniu Rendereru.material mo¿emy ustawiæ teksture któr¹ chcemy poruszaæ "_MainTex" jest lokaln¹ tekstur¹ do przemieszczania 
+        //SetTextureOffset - Metoda Pozwalaj¹ca przesuwaæ tekstury X/Y na obiektcie. 
     }
 }
+    
