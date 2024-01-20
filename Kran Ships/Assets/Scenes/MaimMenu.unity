@@ -520,6 +520,7 @@ GameObject:
   - component: {fileID: 938820291}
   - component: {fileID: 938820290}
   - component: {fileID: 938820289}
+  - component: {fileID: 938820293}
   - component: {fileID: 938820292}
   m_Layer: 5
   m_Name: Button (1)
@@ -592,9 +593,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 938820292}
+      - m_Target: {fileID: 11500000, guid: e3cfaf9f6dae3cf40b5b481432414442, type: 3}
         m_TargetAssemblyTypeName: PlayGame, Assembly-CSharp
-        m_MethodName: QuitGame
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -651,11 +652,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 938820287}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b4c4f5ac6714204a9bc20ef5cc196fe, type: 3}
+  m_Script: {fileID: 11500000, guid: 89a481d2aabb3a24e9dd1b5f34504108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionCrossF: {fileID: 1972867297}
-  transtionWait: 1
+--- !u!114 &938820293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938820287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3cfaf9f6dae3cf40b5b481432414442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &944261635
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,11 +1128,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1718402497}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b4c4f5ac6714204a9bc20ef5cc196fe, type: 3}
+  m_Script: {fileID: 11500000, guid: 89a481d2aabb3a24e9dd1b5f34504108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionCrossF: {fileID: 1972867297}
-  transtionWait: 1
 --- !u!1 &1764443395
 GameObject:
   m_ObjectHideFlags: 0

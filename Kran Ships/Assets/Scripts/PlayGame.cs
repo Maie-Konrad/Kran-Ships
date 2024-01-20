@@ -22,9 +22,7 @@ public class PlayGame : MonoBehaviour
         yield return new WaitForSeconds(transtionWait);
 
         SceneManager.LoadScene(levelIndex);
-    }   
-    public void QuitGame()
-    {
-        Application.Quit();
+
     }
+   
 }

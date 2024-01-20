@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class ButtomTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    PlayGame game = new PlayGame();
+
+    public void PlayStartButtom()
     {
-        
+
+        game.Playgame();
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
